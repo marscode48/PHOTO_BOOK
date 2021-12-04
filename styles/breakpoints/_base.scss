@@ -3,19 +3,23 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-// body {
-//   font-family: "Kameron", "Noto Sans JP", sans-serif;
-// }
-// img {
-//   max-width: 100%;
-//   vertical-align: bottom;
-// }
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  background-color: $cBgGray;
+  color: $cBlack;
+  @extend .font-md;
+  margin: 8px;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
 // .font-sm {
 //   font-size: 14px;
 // }
-// .font-md {
-//   font-size: 17px;
-// }
+.font-md {
+  font-size: 0.875rem;
+}
 // .font-lr {
 //   font-size: 17px;
 // }
@@ -54,3 +58,25 @@ Stylesheet: ベーススタイル
 //   flex-direction: column;
 // }
 
+#container {
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+}
+
+.header {
+
+  &__inner {
+    margin-top: 60px;
+    padding: 0 10px;
+  }
+
+  &__logo a {
+    display: block;
+  }
+
+  &__logo img {
+    width: 160px;
+    margin-bottom: 15px;
+    height: 100%;
+  }
+}

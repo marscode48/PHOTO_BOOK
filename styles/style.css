@@ -4,6 +4,42 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  background-color: #F4F9FF;
+  color: #333;
+  margin: 8px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-md, body {
+  font-size: 0.875rem;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__logo img {
+  width: 160px;
+  margin-bottom: 15px;
+  height: 100%;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
