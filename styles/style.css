@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  background-color: #F4F9FF;
+  color: #333;
+  margin: 8px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm, .footer p {
+  font-size: 10px;
+}
+
+.font-md, body, .detail__title dt, .detail__title dd {
+  font-size: 0.875rem;
+}
+
+.font-lg, .section-title {
+  font-size: 1.125rem;
+}
+
+.pb-sm, .header__inner, .visual {
+  padding: 0px 10px;
+}
+
+.pb-lg, .index__inner, .detail__inner, .footer__inner {
+  padding: 0px 40px;
+}
+
+.section-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  margin-top: 60px;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__logo img {
+  width: 160px;
+  margin-bottom: 15px;
+  height: 100%;
+}
+
+.visual {
+  margin-bottom: 60px;
+}
+
+.index {
+  padding: 30px 0;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.index__list {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.index__list li {
+  margin-bottom: 20px;
+}
+
+.index__list li:last-child {
+  margin-bottom: 0px;
+}
+
+.detail {
+  margin-bottom: 100px;
+}
+
+.detail__content img {
+  margin-bottom: 25px;
+}
+
+.detail__title dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+  padding: 16px 0;
+  border-top: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.detail__title dt {
+  width: 25%;
+  font-weight: 400;
+}
+
+.detail__title dd {
+  width: 75%;
+}
+
+.detail__title p {
+  margin-bottom: 20px;
+}
+
+.detail__link {
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+
+.footer {
+  padding: 15px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .pb-sm, .header__inner, .visual, .header__inner, .visual {
+    padding: 0px;
+  }
+  .index__inner, .detail__inner, .footer__inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .detail__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .detail__content img {
+    width: 270px;
+    margin-right: 60px;
+    margin-bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,153 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  background-color: $cBgGray;
+  color: $cBlack;
+  @extend .font-md;
+  margin: 8px;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 10px;
+}
+.font-md {
+  font-size: 0.875rem;
+}
+// .font-lr {
+//   font-size: 1.125rem;
+// }
+.font-lg {
+  font-size: 1.125rem;
+}
+// .mb-sm {
+//   margin-bottom: 16px !important;
+// }
+// .mb-lg {
+//   margin-bottom: 80px !important;
+// }
+.pb-sm {
+  padding: 0px 10px;
+}
+.pb-lg {
+  padding: 0px 40px;
+}
+// .content-width {
+//   width: 90%;
+//   margin: 0 auto;
+//   max-width: $contentMaxWidth;
+// }
+.section-title {
+  @extend .font-lg;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+// .sub-title {
+//   @extend .font-sm;
+//   color: $cSubTitle;
+// }
+// .flex {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+#container {
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+}
+
+.header {
+
+  &__inner {
+    margin-top: 60px;
+    @extend .pb-sm
+  }
+
+  &__logo a {
+    display: block;
+  }
+
+  &__logo img {
+    width: 160px;
+    margin-bottom: 15px;
+    height: 100%;
+  }
+}
+
+.visual {
+  @extend .pb-sm;
+  margin-bottom: 60px;
+}
+
+.index {
+  padding: 30px 0;
+  background-color: $cWhite;
+  margin-bottom: 60px;
+
+  &__inner {
+    @extend .pb-lg
+  }
+
+  &__list {
+    margin-left: 20px;
+    padding: 0;
+    li {
+      margin-bottom: 20px;
+    }
+    li:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.detail {
+  margin-bottom: 100px;
+  &__inner {
+    @extend .pb-lg
+  }
+  &__content img {
+    margin-bottom: 25px;
+  }
+  &__title dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    padding: 16px 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+  }
+  &__title dt {
+    width: 25%;
+    @extend .font-md;
+    font-weight: 400;
+  }
+  &__title dd {
+    width: 75%;
+    @extend .font-md;
+  }
+  &__title p {
+    margin-bottom: 20px;
+  }
+  &__link {
+    color: $cBlack;
+    border-bottom: 1px solid $cBlack;
+  }
+}
+
+.footer {
+  padding: 15px 0;
+  &__inner {
+    @extend .pb-lg;
+  }
+  & p {
+    @extend .font-sm;
+    margin: 0;
+  }
+}
