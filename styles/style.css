@@ -29,11 +29,11 @@ img {
 }
 
 .pb-sm, .header__inner, .visual {
-  padding: 0px 10px !important;
+  padding: 0px 10px;
 }
 
 .pb-lg, .index__inner, .detail__inner, .footer__inner {
-  padding: 0px 40px !important;
+  padding: 0px 40px;
 }
 
 .section-title {
@@ -126,6 +126,10 @@ img {
   padding: 15px 0;
 }
 
+.footer p {
+  margin: 0;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -148,6 +152,30 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .pb-sm, .header__inner, .visual, .header__inner, .visual {
+    padding: 0px;
+  }
+  .index__inner, .detail__inner, .footer__inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .detail__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .detail__content img {
+    width: 270px;
+    margin-right: 60px;
+    margin-bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (min-width: 1280px) {

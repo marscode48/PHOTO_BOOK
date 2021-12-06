@@ -33,10 +33,10 @@ img {
 //   margin-bottom: 80px !important;
 // }
 .pb-sm {
-  padding: 0px 10px !important;
+  padding: 0px 10px;
 }
 .pb-lg {
-  padding: 0px 40px!important;
+  padding: 0px 40px;
 }
 // .content-width {
 //   width: 90%;
@@ -148,5 +148,6 @@ img {
   }
   & p {
     @extend .font-sm;
+    margin: 0;
   }
 }

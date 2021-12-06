@@ -3,3 +3,25 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+.pb-sm, .header__inner, .visual {
+  padding: 0px;
+}
+
+.index__inner, .detail__inner, .footer__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.detail__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  & img {
+    width: 270px;
+    margin-right: 60px;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+}
