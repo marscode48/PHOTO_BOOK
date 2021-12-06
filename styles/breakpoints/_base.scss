@@ -35,9 +35,9 @@ img {
 .pb-sm {
   padding: 0px 10px !important;
 }
-// .pb-lg {
-//   padding-bottom: 80px !important;
-// }
+.pb-lg {
+  padding: 0px 40px!important;
+}
 // .content-width {
 //   width: 90%;
 //   margin: 0 auto;
@@ -92,7 +92,7 @@ img {
   margin-bottom: 60px;
 
   &__inner {
-    padding: 0 40px;
+    @extend .pb-lg
   }
 
   &__list {
@@ -110,7 +110,7 @@ img {
 .detail {
   margin-bottom: 100px;
   &__inner {
-    padding: 0 40px;
+    @extend .pb-lg
   }
   &__content img {
     margin-bottom: 25px;
@@ -138,5 +138,15 @@ img {
   &__link {
     color: $cBlack;
     border-bottom: 1px solid $cBlack;
+  }
+}
+
+.footer {
+  padding: 15px 0;
+  &__inner {
+    @extend .pb-lg;
+  }
+  & p {
+    @extend .font-sm;
   }
 }

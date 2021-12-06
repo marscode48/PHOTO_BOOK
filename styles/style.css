@@ -16,7 +16,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sm {
+.font-sm, .footer p {
   font-size: 10px;
 }
 
@@ -30,6 +30,10 @@ img {
 
 .pb-sm, .header__inner, .visual {
   padding: 0px 10px !important;
+}
+
+.pb-lg, .index__inner, .detail__inner, .footer__inner {
+  padding: 0px 40px !important;
 }
 
 .section-title {
@@ -67,10 +71,6 @@ img {
   margin-bottom: 60px;
 }
 
-.index__inner {
-  padding: 0 40px;
-}
-
 .index__list {
   margin-left: 20px;
   padding: 0;
@@ -86,10 +86,6 @@ img {
 
 .detail {
   margin-bottom: 100px;
-}
-
-.detail__inner {
-  padding: 0 40px;
 }
 
 .detail__content img {
@@ -124,6 +120,10 @@ img {
 .detail__link {
   color: #333;
   border-bottom: 1px solid #333;
+}
+
+.footer {
+  padding: 15px 0;
 }
 
 @media (min-width: 480px) {
